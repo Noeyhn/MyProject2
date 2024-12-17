@@ -1,0 +1,52 @@
+spring:
+  profiles:
+    active: local
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+springdoc:
+  swagger-ui:
+    groups-order: DESC
+    tags-sorter: alpha
+    operations-sorter: method
+    disable-swagger-default-url: true
+    display-request-duration: true
+    default-models-expand-depth: 2
+    default-model-expand-depth: 2
+    path: /swagger-custom-ui.html
+
+  api-docs:
+    path: /api-docs
+
+
+  paths-to-match:
+    - /api/**
+  writer-with-default-pretty-printer: true
+  model-and-view-allowed: true
+  show-actuator: true
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+
+datasource:
+  url: ${DB_URL}
+  driver-class-name: ${DB_CLASSNAME}
+  username: ${DB_USERNAME}
+  password: ${DB_PASSWORD}
+
+jwt:
+  secret: ${SECRET_KEY}

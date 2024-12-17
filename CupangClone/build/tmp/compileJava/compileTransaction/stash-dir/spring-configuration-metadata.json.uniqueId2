@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "datasource",
+      "type": "com.github.cupangclone.properties.DataSourceProperties",
+      "sourceType": "com.github.cupangclone.properties.DataSourceProperties"
+    },
+    {
+      "name": "spring.data.redis",
+      "type": "com.github.cupangclone.properties.RedisProperties",
+      "sourceType": "com.github.cupangclone.properties.RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.github.cupangclone.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.github.cupangclone.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "com.github.cupangclone.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "com.github.cupangclone.properties.DataSourceProperties"
+    },
+    {
+      "name": "spring.data.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.github.cupangclone.properties.RedisProperties"
+    },
+    {
+      "name": "spring.data.redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.cupangclone.properties.RedisProperties"
+    }
+  ],
+  "hints": []
+}
